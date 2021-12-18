@@ -33,8 +33,7 @@ class GameVC: UIViewController {
   var swipeDown: UISwipeGestureRecognizer!
   var swipeLeft: UISwipeGestureRecognizer!
   var swipeRight: UISwipeGestureRecognizer!
-  
-//  var pan: UIPanGestureRecognizer!
+
  
   override func viewDidLoad() {
     super.viewDidLoad()
@@ -151,20 +150,32 @@ extension GameVC {
     
     func makeboard() {
       var i = 1
-      for x in 0..<boardDim {
+      let picSide = CGFloat(( UIImage(named: "1")?.cgImage?.width ?? 30 ) / boardDim )
+      for y in 0..<boardDim {
         imageLine = [UIImageView]()
-        for y in 0..<boardDim {
+        for x in 0..<boardDim {
+//          imageLine.append(
+//           UIImageView(image: UIImage(systemName: "\(y)\(x).square.fill")))
+         
           imageLine.append(
-           UIImageView(image: UIImage(systemName: "\(x)\(y).square.fill")))
+            UIImageView(image: UIImage(
+              cgImage: (UIImage(named: "1")?.cgImage?.cropping(
+                to: CGRect(origin: CGPoint(x: picSide * CGFloat(x), y: picSide * CGFloat(y)),
+                           size: CGSize(width: picSide, height: picSide)
+                          )
+              ))!
+            ))
+          )
+         
           i += 1
         }
         board.append(imageLine)
-//        imageLine.removeAll()
+
       }
           
     }
     
-    makeboard()
+    
     
     boardView.frame = CGRect(origin: .zero,
                              size: CGSize(
@@ -182,12 +193,14 @@ extension GameVC {
    
     cardSide = view.bounds.width*0.3
     cardSize = CGSize(width: cardSide, height: cardSide)
-                             
+     
+    makeboard()
+    
     for y in 0..<boardDim {
       for i in 0..<boardDim {
-        var card = board[y][i]
+        let card = board[y][i]
         card.frame = CGRect(origin: CGPoint(x: cardSide * CGFloat(i),
-                                                   y: cardSide * CGFloat(y)),
+                                           y: cardSide * CGFloat(y)),
                                    size: cardSize)
         card.layer.shadowOffset = CGSize(width: 5, height: 5)
         card.layer.shadowOpacity = 0.5
