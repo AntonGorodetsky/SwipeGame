@@ -7,7 +7,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class TrashVC: UIViewController {
   
   var cardOne = UIImageView()
   var cardTwo = UIImageView()
@@ -113,7 +113,7 @@ class ViewController: UIViewController {
   }
 }
 
-extension ViewController {
+extension TrashVC {
   private func setup() {
     cardSide = view.bounds.width*0.3
     cardSize = CGSize(width: cardSide, height: cardSide)

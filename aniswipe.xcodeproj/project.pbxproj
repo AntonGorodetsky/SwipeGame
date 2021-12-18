@@ -7,20 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		C0131FC0276A46BC0014E179 /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0131FBF276A46BC0014E179 /* Card.swift */; };
 		C0131FC2276A48A60014E179 /* GameVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0131FC1276A48A60014E179 /* GameVC.swift */; };
 		C0ACCB1A27679E96005FA834 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0ACCB1927679E96005FA834 /* AppDelegate.swift */; };
-		C0ACCB1E27679E96005FA834 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0ACCB1D27679E96005FA834 /* ViewController.swift */; };
+		C0ACCB1E27679E96005FA834 /* TrashVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0ACCB1D27679E96005FA834 /* TrashVC.swift */; };
 		C0ACCB2327679E9C005FA834 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C0ACCB2227679E9C005FA834 /* Assets.xcassets */; };
 		C0ACCB2627679E9C005FA834 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C0ACCB2427679E9C005FA834 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		C0131FBF276A46BC0014E179 /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
 		C0131FC1276A48A60014E179 /* GameVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameVC.swift; sourceTree = "<group>"; };
 		C0ACCB1627679E96005FA834 /* aniswipe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = aniswipe.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C0ACCB1927679E96005FA834 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		C0ACCB1D27679E96005FA834 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		C0ACCB1D27679E96005FA834 /* TrashVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrashVC.swift; sourceTree = "<group>"; };
 		C0ACCB2227679E9C005FA834 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C0ACCB2527679E9C005FA834 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C0ACCB2727679E9C005FA834 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -57,12 +55,11 @@
 			isa = PBXGroup;
 			children = (
 				C0ACCB1927679E96005FA834 /* AppDelegate.swift */,
-				C0ACCB1D27679E96005FA834 /* ViewController.swift */,
 				C0131FC1276A48A60014E179 /* GameVC.swift */,
-				C0131FBF276A46BC0014E179 /* Card.swift */,
 				C0ACCB2227679E9C005FA834 /* Assets.xcassets */,
 				C0ACCB2427679E9C005FA834 /* LaunchScreen.storyboard */,
 				C0ACCB2727679E9C005FA834 /* Info.plist */,
+				C0ACCB1D27679E96005FA834 /* TrashVC.swift */,
 			);
 			path = aniswipe;
 			sourceTree = "<group>";
@@ -137,8 +134,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C0ACCB1E27679E96005FA834 /* ViewController.swift in Sources */,
-				C0131FC0276A46BC0014E179 /* Card.swift in Sources */,
+				C0ACCB1E27679E96005FA834 /* TrashVC.swift in Sources */,
 				C0131FC2276A48A60014E179 /* GameVC.swift in Sources */,
 				C0ACCB1A27679E96005FA834 /* AppDelegate.swift in Sources */,
 			);
